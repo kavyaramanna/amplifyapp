@@ -1,0 +1,9 @@
+type Todo @model {
+  id: ID!
+  employeeId: String!
+  employeeName: String!
+  designation: String!
+  bloodGroup: String!
+  contactNumber: String!
+  education: String!
+}
