@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import Layout from "../components/layout";
-import Create from "../screens/createEmployee/create";
-import ViewEmployees from "../screens/createEmployee/viewEmployees";
+import Create from "../screens/Employee/create";
+import ViewEmployees from "../screens/Employee/viewEmployees";
 import Landing from "../screens/landingPage";
 
 const Routing = () => {
