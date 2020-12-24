@@ -12,6 +12,19 @@ const styles = (theme) => ({
       width: "80vw",
     },
   },
+  headingGrid: {
+    marginBottom: theme.spacing(4),
+  },
+  arrowbackIcon: {
+    color: "#9e9e9e",
+  },
+  headingTypography: {
+    fontFamily: "courier",
+    fontSize: "18px",
+    opacity: "1",
+    fontWeight: "bold",
+    marginLeft: theme.spacing(3),
+  },
   createHeadingTypography: {
     fontFamily: "courier",
     fontSize: "18px",
@@ -25,7 +38,7 @@ const styles = (theme) => ({
     },
   },
   saveButton: {
-    background: "#0EBFE9",
+    background: "linear-gradient(#0C3064,#0B9DBC)",
     color: "white",
     padding: "10px",
     width: "8vw",
@@ -34,7 +47,7 @@ const styles = (theme) => ({
     marginLeft: theme.spacing(3),
     marginRight: theme.spacing(2),
     "&:hover": {
-      background: "#0EBFE9",
+      background: "linear-gradient(#0C3064,#0B9DBC)",
       color: "white",
     },
     [theme.breakpoints.down("sm")]: {
@@ -42,9 +55,9 @@ const styles = (theme) => ({
     },
   },
   clearButton: {
-    borderColor: "#0EBFE9",
+    borderColor: "#0B9DBC",
     width: "8vw",
-    color: "#0EBFE9",
+    color: "#0B9DBC",
     padding: "10px",
     float: "right",
     marginTop: theme.spacing(3),
@@ -52,6 +65,9 @@ const styles = (theme) => ({
     [theme.breakpoints.down("sm")]: {
       width: "30vw",
     },
+  },
+  ErrorText: {
+    color: "red",
   },
 });
 export default styles;

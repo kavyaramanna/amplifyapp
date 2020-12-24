@@ -7,16 +7,13 @@ const styles = (theme) => ({
   root: {
     display: "flex",
   },
-  toolbar: {
-    paddingRight: 24,
-  },
 
   appBarSpacer: theme.mixins.toolbar,
   content: {
-    // flexGrow: 1,
-    // padding: theme.spacing.unit,
-    // paddingBottom: theme.spacing.unit * 3,
-    // backgroundImage: "purple",
+    flexGrow: 1,
+    backgroundColor: "#fdfdfd",
+    // minHeight: "85vh",
+    padding: "4%",
   },
 });
 
@@ -31,7 +28,7 @@ class Layout extends React.Component {
 
     return (
       <div>
-        {/* <AppBar /> */}
+        <AppBar />
         <main className={classes.content}>{this.props.children}</main>
       </div>
     );
