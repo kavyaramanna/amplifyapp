@@ -61,11 +61,12 @@ export class ViewEmployees extends Component {
       ...this.state,
       lists: newListsArray,
     });
-    alert("Are you sure you want to delete?");
+
     await API.graphql({
       query: deleteTodoMutation,
       variables: { input: { id } },
     });
+    alert("Employee deleted successfully");
   };
   handleClickEditOpen = async ({ id }) => {
     await API.graphql({

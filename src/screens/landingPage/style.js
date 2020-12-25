@@ -35,6 +35,7 @@ const styles = (theme) => ({
     fontStyle: "justify",
     fontWeight: "bold",
     opacity: "0.5",
+    textDecoration: "none",
   },
   buttonStyle: {
     background: "linear-gradient(#0C3064,#0B9DBC)",
