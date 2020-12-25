@@ -54,7 +54,6 @@ export class ViewEmployees extends Component {
     } catch (error) {
       console.log("Error!");
     }
-    console.log("lists", this.state.lists);
   };
   deleteList = async ({ id }) => {
     const newListsArray = this.state.lists.filter((list) => list.id !== id);
@@ -87,7 +86,7 @@ export class ViewEmployees extends Component {
   };
   render() {
     const { classes } = this.props;
-    const { lists } = this.state;
+
     const indexOfLastPost = this.state.activePage * this.state.rowsPerPage;
     const indexOfFirstPost = indexOfLastPost - this.state.rowsPerPage;
     const currentLists = this.state.lists.slice(
@@ -152,7 +151,7 @@ export class ViewEmployees extends Component {
                                 <Typography
                                   className={classes.gridHeadingTypography}
                                 >
-                                  Education
+                                  Education :
                                 </Typography>
 
                                 <Typography className={classes.gridTypography}>
