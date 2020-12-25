@@ -42,14 +42,19 @@ export class ViewEmployees extends Component {
   handleListAllTodo = async () => {
     try {
       const apiData = await API.graphql({ query: listTodos });
+
       this.setState({
         ...this.state,
-        lists: apiData.data.listTodos.items,
+        lists: apiData.data.listTodos.items.sort(
+          (a, b) => a.employeeId - b.employeeId
+        ),
+
         totalCount: apiData.data.listTodos.items.length,
       });
     } catch (error) {
       console.log("Error!");
     }
+    console.log("lists", this.state.lists);
   };
   deleteList = async ({ id }) => {
     const newListsArray = this.state.lists.filter((list) => list.id !== id);
